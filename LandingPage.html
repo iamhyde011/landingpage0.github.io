@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Parque Cafe</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#" ><img src="PQC.png" class="PQC"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Best Seller</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </header>
+
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just Coffee<br>It's <span>Parque Cafe</span></h2>
+                    <p>TASTE THE LOVE IN EVERY CUP</p>
+                    <a href="#">Learn More</a>
+
+                </div>
+                <div class="imgBox">
+                    <img src="coffee1.png" class="Coffee22">
+                </div>
+            </div>
+            <ul class="Drinks">
+                <li><img src="drink1.png" onclick="imgSlider('drink1.png');changeCircleColor('#5f4a4a')"></li>
+                <li><img src="coffee1.png" onclick="imgSlider('coffee1.png');changeCircleColor('#13813d')"></li>
+                <li><img src="drink3.png" onclick="imgSlider('drink3.png');changeCircleColor('#c79e2d')"></li>
+            </ul>
+            <ul class="socmed">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.Coffee22').src = anything;
+            }
+            function changeCircleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
+    </body>
+</html>
